@@ -475,6 +475,23 @@
             line-height: 1.19;              
         }
 
+        /*Иконки соцсетей у команды*/
+
+        .social-icon-list {
+            display: flex;
+        }
+
+        .social-icon-item:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        .social-icon-link {
+            width: 44px;
+            height: 44px;
+            background-color: var(--withe-color);
+            border-radius: 50%;
+        }
+
         /*Постоянные клиенты*/
         .client {
             display: flex;
