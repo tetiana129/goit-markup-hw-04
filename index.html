@@ -26,7 +26,13 @@
                 </ul>
             
                 <ul class="auth-nav">
-                    <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                    <li class="item">
+                        <button class="button-icon">
+                            <svg class="button-mail">
+                                <use href="./images/sprite.svg#icon-envelope"></use>
+                            </svg>
+                        </button>
+                        <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
                     <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
                 </ul>
             </nav>
@@ -39,7 +45,7 @@
 
     
     <!--Главный герой-->
-        <section class="hero">
+        <section class="hero overlay">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
             <button type="button" class="hero-button">Заказать услугу</button>   
@@ -50,19 +56,28 @@
         <section class="section">
             <div class="container">
                 <ul class="features">
-                    <li class="item">
+                    <li class="item antenna">
+                        <!--<div class="icon-features antenna"></div>-->
+                        <!--<button class="button-features">
+                            <svg class="icon-features">
+                                <use href="./svg/symbol-defs.svg#icon-antenna"></use>
+                            </svg>
+                        </button>-->
                         <h3 class="features-heading">Внимание к деталям</h3>
                         <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
-                    <li class="item">
+                    <li class="item clock">
+                        <!--<div class="icon-features clock"></div>-->
                         <h3 class="features-heading">Пунктуальность</h3>
                         <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li class="item">
+                    <li class="item diagram">
+                        <!--<div class="icon-features diagram"></div>-->
                         <h3 class="features-heading">Планирование</h3>
                         <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li class="item">
+                    <li class="item astronaut">
+                        <!--<div class="icon-features astronaut"></div>-->
                         <h3 class="features-heading">Современные технологии</h3>
                         <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
@@ -76,13 +91,13 @@
                     <h2 class="section-title">Чем мы занимаемся</h2>
                         <ul class="works">
                             <li class="item">
-                                <img src="./images/img.jpg" alt="рабочее место программиста" width="370">
+                                <img src="./images/works1.jpg" alt="рабочее место программиста" width="370">
                             </li>
                             <li class="item">
-                                <img src="./images/img-1.jpg" alt="веб-дизайнер разрабатывает приложения для смартфонов" width="370">
+                                <img src="./images/works2.jpg" alt="веб-дизайнер разрабатывает приложения для смартфонов" width="370">
                             </li>
                             <li class="item">
-                                <img src="./images/img-2.jpg" alt="работа веб-дизайнера с цветовой палитрой" width="370">
+                                <img src="./images/works3.jpg" alt="работа веб-дизайнера с цветовой палитрой" width="370">
                             </li>
                         </ul>
             </div>
@@ -94,27 +109,89 @@
                 <h2 class="section-title">Наша команда</h2>
                     <ul class="team">
                         <li class="item">
-                            <img src="./images/img-3.jpg" alt="Игорь Демьяненко" width="270">
+                            <img src="./images/team1.jpg" alt="Игорь Демьяненко" width="270">
                             <h3 class="team-name">Игорь Демьяненко</h3>
                             <p class="team-position">Product Designer</p>
+                            <a href="www.instagram">
+                                <svg class="social-icon">
+                                    <use href="./images/symbol-defs.#instagram"></use>
+                                </svg>
+                            </a>
+                            <a href="www.twitter">
+                                <svg class="social-icon">
+                                    <use href="./images/symbol-defs.#twitter"></use>
+                                </svg>
+                            </a>
+                            <a href="www.facebook">
+                                <svg class="social-icon">
+                                    <use href="./images/symbol-defs.#fasebook"></use>
+                                </svg>
+                            </a>
+                            <a href="www.linkedin">
+                                <svg class="social-icon">
+                                    <use href="./images/symbol-defs.#linkedin"></use>
+                                </svg>
+                            </a>
+
+                            <!--<ul class="social">
+                                <li class="social">                                  
+                                </li>
+                                <li class="social">
+                                   
+                                </li>
+                                <li class="social">
+                                    
+                                </li>
+                                <li class="social">
+                                    
+                                </li>
+                            </ul>-->
                         </li>
                         <li class="item">
-                            <img src="./images/img-4.jpg" alt="Ольга Репина" width="270">
+                            <img src="./images/team2.jpg" alt="Ольга Репина" width="270">
                             <h3 class="team-name">Ольга Репина</h3>
                             <p class="team-position">Frontend Developer</p>
                         </li>
                         <li class="item">
-                            <img src="./images/img-5.jpg" alt="Николай Тарасов" width="270">
+                            <img src="./images/team3.jpg" alt="Николай Тарасов" width="270">
                             <h3 class="team-name">Николай Тарасов</h3>
                             <p class="team-position">Marketing</p>                    
                         </li>
                         <li class="item">
-                            <img src="./images/img-6.jpg" alt="Михаил Ермаков" width="270">
+                            <img src="./images/team4.jpg" alt="Михаил Ермаков" width="270">
                             <h3 class="team-name">Михаил Ермаков</h3>
                             <p class="team-position">UI Designer</p>                   
                         </li>
                     </ul>
             </div>
+        </section>
+
+        <!--Наши клиенты-->
+        <section class="section  section-client">
+            <div class="container">
+                <h2 class="section-title">Постоянные клиенты</h2>
+            <ul class="client">
+                <li class="item">
+                    <a href=""><div class="icon-client"></div></a>
+                </li>
+                <li class="item">
+                    <a href=""><div class="icon-client"></div></a>
+                </li>
+                <li class="item">
+                    <a href=""><div class="icon-client"></div></a>
+                </li>
+                <li class="item">
+                    <a href=""><div class="icon-client"></div></a>
+                </li>
+                <li class="item">
+                    <a href=""><div class="icon-client"></div></a>
+                </li>
+                <li class="item">
+                    <a href=""><div class="icon-client"></div></a>
+                </li>
+            </ul>
+            </div>
+
         </section>
     </main>
 
@@ -144,6 +221,31 @@
         </address>
         </div>
     </footer>
+
+
+
+       
+
+    
+        <svg class="social-icon">
+            <use href="./images/symbol-defs.svg#instagram"></use>
+        </svg>
+   
+        <svg class="social-icon">
+            <use href="./images/symbol-defs.svg#twitter"></use>
+        </svg>
+    
+        <svg class="social-icon">
+            <use href="./images/symbol-defs.svg#facebook"></use>
+        </svg>
+   
+        <svg class="social-icon">
+            <use href="./images/symbol-defs.svg#linkedin"></use>
+        </svg>
+        <svg>
+            <use href="./images/symbol-defs.svg#antenna"></use>
+        </svg>
+    
 
 </body>
 </html>

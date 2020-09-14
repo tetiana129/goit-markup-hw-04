@@ -213,6 +213,23 @@
             padding-bottom: 200px;
 
             text-align: center;
+
+           /*background: rgba(47, 48, 58, 0.4);
+            background-image: url(../images/Img-hero-opim.jpg);*/
+        }
+
+        .overlay {
+            min-width: 1600px;
+            height: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: 
+            linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+            url("../images/hero-opim.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            
         }
         
         .hero .hero-title,
@@ -277,6 +294,7 @@
 
         
         .features-heading {
+            padding-top: 30px;
             padding-bottom: 10px;
             margin: 0;
 
@@ -286,7 +304,92 @@
             font-size: 14px;
             line-height: 1.14;
         }
+
+        .icon-features::before:nth-child(1) {
+            display: block;
+            background-image: url(../images/antenna.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .features .item::before {
+            content: "";
+            display: block;
+            background-color: var(--bgc-light-grey);
+            border-radius: 4px;
+            width: 270px;
+            height: 120px;
+            /*background-image: url(../images/antenna.svg);
+            background-repeat: no-repeat;
+            background-position: center;*/
+        }
+
+        .antenna::before {
+            background-image: url(../images/antenna.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .clock::before {
+            background-image: url(../images/clock.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .diagram::before {
+            background-image: url(../images/diagram.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .astronaut::before {
+            background-image: url(../images/astronaut.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+
+                    
+        /*.icon-features {
+            background-color: var(--bgc-light-grey);
+            width: 270px;
+            height: 120px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }*/
+
+        /*.icon-features:nth-child(1) {
+            background-image: url(../images/antenna.svg);
+        }
+
+        .icon-features:nth-child(2) {
+            background-image: url(../images/clock.svg);
+        }
+
+        .icon-features:nth-child(3) {
+            background-image: url(../images/diagram.svg);
+        }*/
+
+
+
+        /*.item .antenna {
+            background-image: url(../images/antenna.svg);
+        }
         
+        .item .clock {
+            background-image: url(../images/clock.svg);
+        }
+
+        .item .diagram {
+            background-image: url(../images/diagram.svg);
+        }
+
+        .item .astronaut {
+            background-image: url(../images/astronaut.svg);
+        }*/
+
+
+
         /*Свойства разделов Чем мы занимаемся и Наша команда*/
         
          /*Заголовки секций*/
@@ -322,9 +425,7 @@
 
         .team {
             display: flex;
-
             list-style: none;
-
             padding: 0;
             margin: 0;
         }
@@ -335,7 +436,10 @@
 
         .team .item {
             background: var(--withe-color);
-            height: 368px;
+            height: 428px;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
+           
         }
         
         
@@ -369,6 +473,27 @@
             
             font-size: 16px;
             line-height: 1.19;              
+        }
+
+        /*Постоянные клиенты*/
+        .client {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .client .item + .item {
+            margin-left: 30px;
+        }
+
+        .icon-client {
+            width: 170px;
+            height: 90px;
+            background-color: var(--withe-color);
+            border: 1px solid #AFB1B8;
+            /*box-sizing: border-box;*/
+            border-radius: 4px;
         }
         
         
