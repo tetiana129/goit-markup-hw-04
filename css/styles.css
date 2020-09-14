@@ -499,6 +499,10 @@
             border-radius: 50%;
         }
 
+        .social-icon-link:hover {
+            background-color: var(--accent-color);
+        }
+
         .social-icon {
             width: 20px;
             height: 20px;
