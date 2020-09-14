@@ -499,6 +499,16 @@
             border-radius: 50%;
         }
 
+        .social-icon {
+            width: 20px;
+            height: 20px;
+
+        }
+
+        .social-icon-link:hover .social-icon {
+            fill: var(--accent-color);
+        }
+
         /*Постоянные клиенты*/
         .client {
             display: flex;
