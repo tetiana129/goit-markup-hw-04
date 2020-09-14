@@ -499,8 +499,9 @@
             border-radius: 50%;
         }
 
-        .social-icon-link:hover {
+        .social-icon-link:hover .social-icon {
             background-color: var(--accent-color);
+            fill: var(--withe-color);
         }
 
         .social-icon {
@@ -510,9 +511,9 @@
 
         }
 
-        .social-icon:hover {
+        /*.social-icon:hover {
             fill: var(--withe-color);
-        }
+        }*/
 
         /*Постоянные клиенты*/
         .client {
