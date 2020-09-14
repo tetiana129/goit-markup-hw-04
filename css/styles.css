@@ -506,7 +506,8 @@
         }
 
         .social-icon-link:hover .social-icon {
-            fill: var(--accent-color);
+            background-color: var(--accent-color);
+            fill: var(--withe-color);
         }
 
         /*Постоянные клиенты*/
