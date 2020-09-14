@@ -154,7 +154,10 @@
 
             padding-top: 60px;
             padding-bottom: 60px;
+        }
 
+        footer .container {
+            display: flex;
         }
 
         footer ul {
@@ -167,7 +170,7 @@
             text-decoration: none;
            
         }
-
+        
         .address {
             color: var(--withe-color);
             font-style: normal;
@@ -187,14 +190,10 @@
             padding: 0;
             margin: 0px 0px 9px 0px;
         }
-        
-        
-        
+                      
         .address .mail {
             color: var(--second-text-color);
-
             margin: 0px 0px 9px 0px;
-
             text-decoration: none;
         }
         
@@ -203,7 +202,29 @@
             color: var(--second-text-color);
             text-decoration: none;
         }
+
+        .container-social {
+            padding: 0;
+            margin: 0px 0px 0px 70px;
+        }    
         
+        .container-social p {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.14;
+            text-transform: uppercase;
+            color: var(--withe-color);
+            margin: 0px 0px 20px 0px;
+        }
+
+        .social-icon-item .blue-circle-link {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .blue-circle-link .white-icon {
+            fill: var(--withe-color);
+        }
+
         /*Свойства главной страницы сайта*/
         
         /*Свойства герой - hero*/
@@ -248,7 +269,6 @@
             border-radius: 4px;
             border: 0;
             padding: 10px 32px;
-
         }
        
         .hero .hero-title {
@@ -319,9 +339,7 @@
             border-radius: 4px;
             width: 270px;
             height: 120px;
-            /*background-image: url(../images/antenna.svg);
-            background-repeat: no-repeat;
-            background-position: center;*/
+            
         }
 
         .antenna::before {
@@ -348,48 +366,7 @@
             background-position: center;
         }
 
-
-                    
-        /*.icon-features {
-            background-color: var(--bgc-light-grey);
-            width: 270px;
-            height: 120px;
-            background-repeat: no-repeat;
-            background-position: center;
-        }*/
-
-        /*.icon-features:nth-child(1) {
-            background-image: url(../images/antenna.svg);
-        }
-
-        .icon-features:nth-child(2) {
-            background-image: url(../images/clock.svg);
-        }
-
-        .icon-features:nth-child(3) {
-            background-image: url(../images/diagram.svg);
-        }*/
-
-
-
-        /*.item .antenna {
-            background-image: url(../images/antenna.svg);
-        }
-        
-        .item .clock {
-            background-image: url(../images/clock.svg);
-        }
-
-        .item .diagram {
-            background-image: url(../images/diagram.svg);
-        }
-
-        .item .astronaut {
-            background-image: url(../images/astronaut.svg);
-        }*/
-
-
-
+           
         /*Свойства разделов Чем мы занимаемся и Наша команда*/
         
          /*Заголовки секций*/
@@ -499,8 +476,11 @@
             border-radius: 50%;
         }
 
-        .social-icon-link:hover .social-icon {
+        .social-icon-link:hover {
             background-color: var(--accent-color);
+        }
+
+        .social-icon-link:hover .social-icon {
             fill: var(--withe-color);
         }
 
@@ -508,32 +488,46 @@
             width: 20px;
             height: 20px;
            fill: #AFB1B8;
-
         }
-
-        /*.social-icon:hover {
-            fill: var(--withe-color);
-        }*/
-
+        
         /*Постоянные клиенты*/
-        .client {
+        .client-icon-list {
             display: flex;
+            justify-content: center;
+            list-style: none;
             padding: 0;
             margin: 0;
-            list-style: none;
         }
 
-        .client .item + .item {
-            margin-left: 30px;
+        .client-icon-item:not(:last-child) {
+            margin-right: 30px;
         }
 
-        .icon-client {
+        .client-icon-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 170px;
             height: 90px;
             background-color: var(--withe-color);
             border: 1px solid #AFB1B8;
-            /*box-sizing: border-box;*/
             border-radius: 4px;
+        }
+
+        .client-icon-link:hover .client-icon {
+            fill: var(--accent-color);
+        }
+
+        .client-icon-link:hover {
+            border: 1px solid var(--accent-color)
+        }
+
+        .client-icon {
+            
+            height: 50px;
+            justify-content: ;
+            object-fit: contain;
+            fill: #AFB1B8;
         }
         
         
