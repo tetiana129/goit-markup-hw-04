@@ -152,12 +152,13 @@
 
             color: var(--primary-text-color);
         }
+        .auth-link:hover .auth-icon{
+            fill: var(--accent-color);
+        }
         .auth-link:hover {
             color: var(--accent-color);
         }
-        .auth-link:hover .auth-icon{
-            color: var(--accent-color);
-        }
+        
 
         .auth-icon {
             width: 10px;
