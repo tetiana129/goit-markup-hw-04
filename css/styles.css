@@ -130,24 +130,47 @@
 
                 
         /*Свойства auth-nav*/
+        .auth-nav .item {
+            display: flex;                      
+        }
+        .auth-link {
+            display: flex;
+            flex-direction: row-reverse;
+            padding-top: 21px;
+            padding-bottom: 21px;
+        }
 
+        
         .auth-nav .item + .item {
-            margin-left: 50px;
+            margin-left: 30px;
         }        
         
         .auth-nav .link{
-            display: block;
+           /* display: block;*/
             padding-top: 21px;
             padding-bottom: 21px;
 
             color: var(--primary-text-color);
         }
-        .auth-nav .link:hover,
-        .auth-nav .link:focus {
+        .auth-link:hover {
+            color: var(--accent-color);
+        }
+        .auth-link:hover .auth-icon{
             color: var(--accent-color);
         }
 
-        /*Футера*/
+        .auth-icon {
+            width: 10px;
+            height: 16px;
+            margin: 0px 10px 0px 0px;
+            fill: var(--primary-text-color);
+        }
+        .mail-icon {
+            width: 16px;
+            height: 12px;
+        }
+
+        /*Футер*/
 
         footer {
             background-color: var(--bgc-dark-grey);
@@ -523,9 +546,7 @@
         }
 
         .client-icon {
-            
             height: 50px;
-            justify-content: ;
             object-fit: contain;
             fill: #AFB1B8;
         }
@@ -551,8 +572,6 @@
 
         .filter-list {
             justify-content: center;
-            /*margin-right: auto;
-            margin-left: auto;*/
         }
 
                 
